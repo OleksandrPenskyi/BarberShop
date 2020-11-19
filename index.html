@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container">
         <div class="header__flex-box header__flex-box--mb">
           <!-- Лого -->
           <a class="logo" href="./index.html">
@@ -26,21 +26,59 @@
           </a>
 
           <!-- Кнопка открытия меню -->
-          <button type="button" class="menu-btn">
+          <button type="button" class="menu-btn" data-modal-open>
             <svg class="menu-btn__svg" width="40" height="40">
-              <use href="../img/icons.svg#icon-menu_open"></use>
-              <use href="../img/icons.svg#icon-menu_close"></use>
+              <use class="menu-btn__open" href="../img/icons.svg#icon-menu_open"></use>
             </svg>
           </button>
         </div>
+
+        <!-- Оббертка с фоном -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="menu-container">
+            <!-- меню -->
+            <nav class="nav nav--mb">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Мастера</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <!-- блок контактов -->
+            <div class="contacts contacts--mb">
+              <a class="contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
+              <button class="subscribe-btn" type="button">онлайн-запись</button>
+            </div>
+
+            <!-- блок соц сетей -->
+            <div class="social">
+              <a class="social__link" href="#">Instagram</a>
+              <a class="social__link" href="#">Youtube</a>
+            </div>
+
+            <!-- кнопка закрытия -->
+            <button type="button" class="menu-btn menu-btn__close" data-modal-close>
+              <svg class="menu-btn__svg" width="40" height="40">
+                <use class="menu-btn__close" href="../img/icons.svg#icon-menu_close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
         <div class="hero">
           <span class="hero__upper-title">A hair salon for men in Kyiv</span>
           <h1 class="hero__title">BarberShop</h1>
           <p class="hero__text">
-            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+            Мы эксперты в модных мужских <br />
+            стрижках. Работаем быстро, <br />
+            осторожно и со вкусом.
           </p>
         </div>
       </div>
     </header>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

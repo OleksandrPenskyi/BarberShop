@@ -1,0 +1,13 @@
+%list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%line {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: $second-font-color;
+}

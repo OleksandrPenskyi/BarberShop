@@ -1,7 +1,13 @@
 .header {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 183px;
+
+  height: 580px;
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 
   background: url('../../img/hero/mobile/bg-img@1x.jpg');
   @media screen and (min-device-pixel-ratio: 2),
@@ -10,15 +16,10 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../../img/hero/mobile/bg-img@2x.jpg');
   }
-}
+  background-position: center;
 
-.header__container {
-  padding-top: 40px;
-  padding-bottom: 183px;
-  height: 580px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .logo__svg {
@@ -33,6 +34,7 @@
 
 .header__flex-box--mb {
   margin-bottom: 113px;
+  max-width: 480px;
 }
 
 .logo {
@@ -50,6 +52,7 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  z-index: 100;
 }
 
 .hero__upper-title {
@@ -85,4 +88,8 @@
   letter-spacing: 0.02em;
 
   color: $comercial-font-color;
+}
+
+.nav--mb {
+  margin-bottom: 64px;
 }
