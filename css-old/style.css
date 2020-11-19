@@ -14,35 +14,6 @@ font-family: Raleway;
 font-style: normal;
 font-weight: 700; */
 
-:root {
-  --second-font: Raleway, sans-serif;
-
-  --main-title-font: #ffffff;
-  --second-title-font: #303030;
-
-  --main-font-color: #555555;
-  --second-font-color: #303030;
-  --third-font-color: #ffffff;
-
-  --main-hover-color: #ff6c00;
-
-  --comercial-font-color: #9da4bd;
-}
-
-body {
-  font-family: Open Sans, sans-serif;
-}
-
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .top {
   display: flex;
   flex-direction: row-reverse;
