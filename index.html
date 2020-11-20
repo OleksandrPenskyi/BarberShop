@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container container--size">
         <div class="header__flex-box header__flex-box--mb">
           <!-- Лого -->
           <a class="logo" href="./index.html">
@@ -33,8 +33,8 @@
           </button>
         </div>
 
-        <!-- Оббертка с фоном -->
-        <div class="menu-container" data-modal>
+        <!-- !Оббертка с фоном -->
+        <div class="menu-container is-hidden" data-modal>
           <!-- меню -->
           <nav class="nav nav--mb">
             <ul class="nav__list">
@@ -64,8 +64,12 @@
             </svg>
           </button>
         </div>
+      </div>
+    </header>
 
-        <div class="hero">
+    <main>
+      <section class="hero">
+        <div class="container container__hero--mt">
           <span class="hero__upper-title">A hair salon for men in Kyiv</span>
           <h1 class="hero__title">BarberShop</h1>
           <p class="hero__text">
@@ -74,9 +78,10 @@
             осторожно и со вкусом.
           </p>
         </div>
-      </div>
-    </header>
+      </section>
 
+      <section class="aside"></section>
+    </main>
     <script src="./js/modal.js"></script>
   </body>
 </html>

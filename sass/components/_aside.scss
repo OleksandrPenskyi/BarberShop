@@ -1,0 +1,9 @@
+.aside {
+  display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    max-width: 120px;
+    outline: 1px solid red;
+  }
+}
