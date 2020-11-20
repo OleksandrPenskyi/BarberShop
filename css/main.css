@@ -196,6 +196,16 @@ h2 {
           transform: translateX(100%);
 }
 
+.button__open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .button__open {
+    display: none;
+  }
+}
+
 .menu-container {
   position: absolute;
   right: 0;
@@ -206,6 +216,16 @@ h2 {
   padding-top: 118px;
   padding-bottom: 227px;
   background: #ffffff;
+  opacity: 1;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.menu-container.is-hidden {
+  opacity: 0;
+  /* чтобы пропадала подложка backdrop и под ним можно было что-то нажать */
+  pointer-events: none;
+  /* *При выключенном backdrop, свойства modal такие */
 }
 
 .nav__item:not(:last-child) {

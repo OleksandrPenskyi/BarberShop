@@ -21,6 +21,17 @@
   }
 }
 
+// Кнопка открытия меню
+.button__open {
+  // для телефона
+  display: block;
+
+  // для планшета и ПК
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .menu-container {
   position: absolute;
   right: 0;
@@ -33,6 +44,18 @@
   padding-bottom: 227px;
 
   background: #ffffff;
+
+  opacity: 1;
+  // transform: translateX(0);
+  transition: opacity 250ms linear;
+
+  &.is-hidden {
+    opacity: 0;
+    /* чтобы пропадала подложка backdrop и под ним можно было что-то нажать */
+    pointer-events: none;
+    /* *При выключенном backdrop, свойства modal такие */
+    // transform: translateX(+100%);
+  }
 }
 
 .nav__list {

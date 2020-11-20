@@ -26,7 +26,7 @@
           </a>
 
           <!-- Кнопка открытия меню -->
-          <button type="button button__open" class="menu-btn" data-modal-open>
+          <button type="button " class="menu-btn button__open" data-modal-open>
             <svg class="menu-btn__svg" width="40" height="40">
               <use class="menu-btn__open" href="../img/icons.svg#icon-menu_open"></use>
             </svg>
@@ -34,37 +34,35 @@
         </div>
 
         <!-- Оббертка с фоном -->
-        <div class="backdrop is-hidden" data-modal>
-          <div class="menu-container">
-            <!-- меню -->
-            <nav class="nav nav--mb">
-              <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Мастера</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-              </ul>
-            </nav>
+        <div class="menu-container" data-modal>
+          <!-- меню -->
+          <nav class="nav nav--mb">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Мастера</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
 
-            <!-- блок контактов -->
-            <div class="contacts contacts--mb">
-              <a class="contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
-              <button class="subscribe-btn" type="button">онлайн-запись</button>
-            </div>
-
-            <!-- блок соц сетей -->
-            <div class="social">
-              <a class="social__link" href="#">Instagram</a>
-              <a class="social__link" href="#">Youtube</a>
-            </div>
-
-            <!-- кнопка закрытия -->
-            <button type="button" class="menu-btn menu-btn__close" data-modal-close>
-              <svg class="menu-btn__svg" width="40" height="40">
-                <use class="menu-btn__close" href="../img/icons.svg#icon-menu_close"></use>
-              </svg>
-            </button>
+          <!-- блок контактов -->
+          <div class="contacts contacts--mb">
+            <a class="contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="subscribe-btn" type="button">онлайн-запись</button>
           </div>
+
+          <!-- блок соц сетей -->
+          <div class="social">
+            <a class="social__link" href="#">Instagram</a>
+            <a class="social__link" href="#">Youtube</a>
+          </div>
+
+          <!-- кнопка закрытия -->
+          <button type="button" class="menu-btn menu-btn__close" data-modal-close>
+            <svg class="menu-btn__svg" width="40" height="40">
+              <use class="menu-btn__close" href="../img/icons.svg#icon-menu_close"></use>
+            </svg>
+          </button>
         </div>
 
         <div class="hero">
