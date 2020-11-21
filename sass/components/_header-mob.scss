@@ -1,0 +1,41 @@
+// !гуд!
+// логотип
+.logo-mob {
+  // для мобильного
+  fill: $main-title-font;
+
+  //   для планшета и ПК
+  @media screen and (min-width: 768px) {
+    fill: #000000;
+  }
+}
+
+// кнопка открытия меню
+.menu-openMob {
+  // для телефона
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+}
+
+// Позиционирование меню
+.wrapper-mob__logo-menu {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 31px;
+  padding-right: 31px;
+}

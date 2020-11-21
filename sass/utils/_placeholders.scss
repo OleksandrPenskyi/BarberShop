@@ -11,3 +11,12 @@
   height: 1px;
   background: $second-font-color;
 }
+
+%social {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: $second-font-color;
+  text-decoration: none;
+}

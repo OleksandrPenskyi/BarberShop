@@ -38,3 +38,23 @@ h2 {
     width: 1280px;
   }
 }
+
+.header-mob {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-pc {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}

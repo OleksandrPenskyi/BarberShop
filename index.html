@@ -15,26 +15,106 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container container--size">
-        <div class="header__flex-box header__flex-box--mb">
-          <!-- Лого -->
-          <a class="logo" href="./index.html">
-            <svg class="logo__svg" width="69" height="56">
-              <use href="../img/icons.svg#icon-logo"></use>
-            </svg>
-          </a>
+    <!-- Мобильная версия -->
+    <header class="header-mob">
+      <div class="container container-mob--pos">
+        <div class="header-mob">
+          <div class="wrapper-mob__logo-menu">
+            <!-- Лого -->
+            <a href="./index.html">
+              <svg class="logo-mob" width="69" height="56">
+                <use class="logo-mob__svg" href="../img/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
 
-          <!-- Кнопка открытия меню -->
-          <button type="button " class="menu-btn button__open" data-modal-open>
-            <svg class="menu-btn__svg" width="40" height="40">
-              <use class="menu-btn__open" href="./img/icons.svg#icon-menu_open"></use>
+            <!-- Кнопка открытия меню только для мобильного-->
+            <button type="button" class="menu-openMob" data-modal-open>
+              <svg class="menu-mob__svg" width="40" height="40">
+                <use class="menu-mob__open" href="./img/icons.svg#icon-menu_open"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Оббертка с фоном только для мобильного-->
+        <div class="menu-container--mobile is-hidden" data-modal>
+          <!-- !меню -->
+          <nav class="nav-mob nav-mob--mb">
+            <ul class="nav-mob__list">
+              <li class="nav-mob__item"><a class="nav-mob__link" href="#">О нас</a></li>
+              <li class="nav-mob__item"><a class="nav-mob__link" href="#">Услуги и цены</a></li>
+              <li class="nav-mob__item"><a class="nav-mob__link" href="#">Мастера</a></li>
+              <li class="nav-mob__item"><a class="nav-mob__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <!-- блок контактов -->
+          <div class="contacts-mob">
+            <a class="contacts-mob__link" href="tel:+380441111111">+38 044 111 11 11</a>
+            <button class="contacts-mob__subscribe-btn" type="button">онлайн-запись</button>
+          </div>
+
+          <!-- блок соц сетей -->
+          <div class="social-mob">
+            <a class="social-mob__link" href="https://www.instagram.com">Instagram</a>
+            <a class="social-mob__link" href="https://www.youtube.com/">Youtube</a>
+          </div>
+
+          <!-- Кнопка закртыия меню только для мобильного-->
+          <button type="button" class="menu-mobClose" data-modal-close>
+            <svg class="menu-mob__svg" width="40" height="40">
+              <use class="menu-mob__close" href="./img/icons.svg#icon-menu_close"></use>
             </svg>
           </button>
         </div>
+      </div>
+    </header>
 
-        <!-- !Оббертка с фоном -->
-        <div class="menu-container is-hidden" data-modal>
+    <!-- Планшет и ПК версия -->
+    <header class="header-pc">
+      <div class="container container--size">
+        <div class="header__flex-box header__flex-box--mb header__flex-box--position">
+          <div class="wrapper-tablet">
+            <!-- Лого -->
+            <a class="logo" href="./index.html">
+              <svg width="69" height="56">
+                <use class="logo__svg" href="../img/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+
+            <!-- Кнопка открытия меню только для мобильного-->
+            <button type="button" class="menu-btn button__open" data-modal-open>
+              <svg class="menu-btn__svg" width="40" height="40">
+                <use class="menu-btn__open" href="./img/icons.svg#icon-menu_open"></use>
+              </svg>
+            </button>
+
+            <!-- меню для планшета и ПК -->
+            <nav class="nav nav--mb nav__pc">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Услуги и цены</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Мастера</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- блок контактов для планшета и ПК -->
+          <div class="contacts contacts--mb contacts__pc">
+            <button class="subscribe-btn" type="button">онлайн-запись</button>
+            <a class="contacts__link" href="tel:+380441111111">+38 044 111 11 11</a>
+          </div>
+
+          <!-- блок соц сетей для планшета и ПК -->
+          <!-- <div class="header-socialPC">
+            <a class="header-social__link" href="https://www.instagram.com">Instagram</a>
+            <a class="header-social__link" href="https://www.youtube.com/">Youtube</a>
+          </div> -->
+        </div>
+
+        <!-- Оббертка с фоном только для мобильного-->
+        <div class="menu-container--mobile is-hidden" data-modal>
           <!-- меню -->
           <nav class="nav nav--mb">
             <ul class="nav__list">
@@ -57,7 +137,7 @@
             <a class="social__link" href="https://www.youtube.com/">Youtube</a>
           </div>
 
-          <!-- кнопка закрытия -->
+          <!-- Кнопка открытия меню только для мобильного-->
           <button type="button" class="menu-btn menu-btn__close" data-modal-close>
             <svg class="menu-btn__svg" width="40" height="40">
               <use class="menu-btn__close" href="./img/icons.svg#icon-menu_close"></use>
@@ -68,27 +148,27 @@
     </header>
 
     <main>
-      <div class="container">
-        <div class="wrapper">
-          <section class="hero">
-            <div class="container container__hero--mt">
-              <span class="hero__upper-title">A hair salon for men in Kyiv</span>
-              <h1 class="hero__title">BarberShop</h1>
-              <p class="hero__text">
-                Мы эксперты в модных мужских <br />
-                стрижках. Работаем быстро, <br />
-                осторожно и со вкусом.
-              </p>
-            </div>
-          </section>
+      <!-- Секция Hero -->
+      <div class="wrapper__hero-aside">
+        <section class="hero">
+          <div class="container container__hero--mt">
+            <span class="hero__upper-title">A hair salon for men in Kyiv</span>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__text">
+              Мы эксперты в модных мужских <br />
+              стрижках. Работаем быстро, <br />
+              осторожно и со вкусом.
+            </p>
+          </div>
+        </section>
 
-          <section class="aside">
-            <div class="social">
-              <a class="social__link" href="https://www.instagram.com">Instagram</a>
-              <a class="social__link" href="https://www.youtube.com/">Youtube</a>
-            </div>
-          </section>
-        </div>
+        <!-- Секция aside -->
+        <section class="aside">
+          <div class="aside__wrapper">
+            <a class="aside-social__link" href="https://www.instagram.com">Instagram</a>
+            <a class="aside-social__link" href="https://www.youtube.com/">Youtube</a>
+          </div>
+        </section>
       </div>
     </main>
     <script src="./js/modal.js"></script>

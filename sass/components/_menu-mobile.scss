@@ -1,15 +1,14 @@
+// !гуд!
 // Кнопка открытия меню
-.button__open {
-  // для телефона
-  display: block;
-
+.menu-openMob {
   // для планшета и ПК
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
-.menu-container {
+// только для мобильного
+.menu-container--mobile {
   // и на его место становится hero
   position: absolute;
   top: 0;
@@ -36,17 +35,33 @@
   }
 }
 
-.nav__list {
-  @extend %list-reset;
+.nav-mob--mb {
+  margin-bottom: 64px;
 }
 
-.nav__item {
-  &:not(:last-child) {
-    margin-bottom: 24px;
+.nav-mob__list {
+  @extend %list-reset;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
-.nav__link {
+.nav-mob__item {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   &:not(:last-child) {
+  //     margin-bottom: 0;
+  //     margin-right: 24px;
+  //   }
+  // }
+}
+
+.nav-mob__link {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.39;
@@ -57,13 +72,25 @@
   &:hover {
     color: $main-hover-color;
   }
+
+  // @media screen and (min-width: 768px) {
+  //   font-size: 12px;
+  //   line-height: 1.33;
+  //   color: $third-font-color;
+  // }
 }
 
-.contacts--mb {
+.contacts-mob {
   margin-bottom: 64px;
+
+  // @media screen and (min-width: 768px) {
+  //   // display: flex;
+  //   // flex-direction: column-reverse;
+  //   margin-bottom: 0;
+  // }
 }
 
-.contacts__link {
+.contacts-mob__link {
   margin-bottom: 24px;
 
   font-weight: 600;
@@ -73,32 +100,60 @@
   text-transform: uppercase;
   color: $second-font-color;
   text-decoration: none;
+
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 0;
+
+  //   font-size: 12px;
+  //   line-height: 1.33;
+  //   color: $third-font-color;
+  // }
 }
 
-.subscribe-btn {
-  padding: 12px 37px;
+.contacts-mob__subscribe-btn {
+  padding: 12px 36px;
 
   background: transparent;
   border: 1px solid $main-hover-color;
   border-radius: 25px;
 
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
   &:hover {
     color: $third-font-color;
     background: $main-hover-color;
   }
+
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 20px;
+  //   color: $third-font-color;
+  //   padding: 12px 20px;
+  // }
 }
-.social {
+
+.social-mob {
+  // для мобильного
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  display: block;
+
+  // для планшета и ПК
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
 }
 
-.social__link {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: $second-font-color;
+.social-mob__link {
+  @extend %social;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
   &:first-child {
     display: flex;
@@ -118,8 +173,22 @@
   }
 }
 
-.menu-btn__close {
+.container-mob--pos {
+  position: relative;
+}
+
+.menu-mobClose {
   position: absolute;
   top: 48px;
   right: 31px;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+
+  // @media screen and (min-width: 768px) {
+  //   display: none;
+  // }
 }

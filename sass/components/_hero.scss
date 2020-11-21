@@ -1,11 +1,12 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  height: 580px;
-  max-width: 480px;
+
   //   width: 100%;
 
   // для мобильного
+  height: 580px;
+  max-width: 480px;
   background: url('../img/hero/mobile/bg-img@1x.jpg');
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -13,6 +14,10 @@
     background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
       url('../img/hero/mobile/bg-img@2x.jpg');
   }
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   // для планшета
   @media screen and (min-width: 768px) {
@@ -23,9 +28,16 @@
       background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
         url('../img/hero/tablet/bg-img@2x.jpg');
     }
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+    max-width: 609px;
   }
 
   // для ПК
+
   @media screen and (min-width: 1200px) {
     background: url('../img/hero/pc/bg-img@1x.jpg');
     @media screen and (min-device-pixel-ratio: 2),
@@ -34,11 +46,13 @@
       background-image: linear-gradient(to right, rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
         url('../img/hero/pc/bg-img@2x.jpg');
     }
-  }
 
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+    max-width: 1125px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-left: 0;
@@ -82,7 +96,14 @@
 }
 
 // для hero и aside
-.wrapper {
-  display: flex;
-  flex-direction: row-reverse;
+.wrapper__hero-aside {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

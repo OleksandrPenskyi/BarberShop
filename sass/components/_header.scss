@@ -1,44 +1,35 @@
-.logo__svg {
-  fill: $main-title-font;
-}
-
 .header__flex-box {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  width: 100%;
-  max-width: 480px;
-  padding-left: 31px;
-  padding-right: 31px;
-}
+    width: 100%;
+    max-width: 480px;
+    padding-left: 31px;
+    padding-right: 31px;
+  }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.menu-btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  z-index: 100;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: end;
+  }
 }
 
 .nav--mb {
+  // для мобильного
   margin-bottom: 64px;
+
+  // для планшета и ПК
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .container__header--mt {

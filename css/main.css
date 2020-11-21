@@ -1,16 +1,25 @@
 @charset "UTF-8";
-.nav__list {
+.nav-mob__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.social__link:first-child::before {
+.aside-social__link:first-child::before, .social-mob__link:first-child::before {
   display: block;
   content: '';
   width: 60px;
   height: 1px;
   background: #303030;
+}
+
+.aside-social__link, .social-mob__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+  text-decoration: none;
 }
 
 body {
@@ -60,46 +69,41 @@ h2 {
   }
 }
 
-.logo__svg {
+@media screen and (max-width: 767px) {
+  .header-mob {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-mob {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-pc {
+    display: block;
+  }
+}
+
+.logo-mob {
   fill: #ffffff;
 }
 
-.header__flex-box {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  max-width: 480px;
-  padding-left: 31px;
-  padding-right: 31px;
+@media screen and (min-width: 768px) {
+  .logo-mob {
+    fill: #000000;
+  }
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu-btn {
+.menu-openMob {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -117,117 +121,82 @@ h2 {
   z-index: 100;
 }
 
-.nav--mb {
-  margin-bottom: 64px;
-}
-
-.container__header--mt {
-  padding-top: 40px;
-}
-
-.container--size {
-  position: relative;
-}
-
-.button__open {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .button__open {
-    display: none;
-  }
-}
-
-.menu-container {
+.wrapper-mob__logo-menu {
   position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 338px;
-  padding-left: 40px;
-  padding-right: 103px;
-  padding-top: 118px;
-  padding-bottom: 227px;
-  background: #ffffff;
-  opacity: 1;
-  -webkit-transition: opacity 250ms linear;
-  transition: opacity 250ms linear;
-}
-
-.menu-container.is-hidden {
-  opacity: 0;
-  /* чтобы пропадала подложка backdrop и под ним можно было что-то нажать */
-  pointer-events: none;
-  /* *При выключенном backdrop, свойства modal такие */
-}
-
-.nav__item:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.nav__link {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.39;
-  letter-spacing: 0.1em;
-  color: #303030;
-  text-decoration: none;
-}
-
-.nav__link:hover {
-  color: #ff6c00;
-}
-
-.contacts--mb {
-  margin-bottom: 64px;
-}
-
-.contacts__link {
-  margin-bottom: 24px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.39;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #303030;
-  text-decoration: none;
-}
-
-.subscribe-btn {
-  padding: 12px 37px;
-  background: transparent;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-}
-
-.subscribe-btn:hover {
-  color: #ffffff;
-  background: #ff6c00;
-}
-
-.social {
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 31px;
+  padding-right: 31px;
 }
 
-.social__link {
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: #303030;
-  text-decoration: none;
+.aside {
+  display: none;
 }
 
-.social__link:first-child {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .aside {
+    display: block;
+    width: 159px;
+    height: 680px;
+    outline: 1px solid red;
+    background: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aside {
+    display: block;
+    width: 155px;
+    outline: 1px solid red;
+    background: #ffffff;
+  }
+}
+
+.aside-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform: rotate(-90deg) translateX(-591px);
+          transform: rotate(-90deg) translateX(-591px);
+}
+
+.aside__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: relative;
+  top: 551px;
+}
+
+.aside-social__link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.aside-social__link:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,18 +209,8 @@ h2 {
           align-items: center;
 }
 
-.social__link:first-child::before {
+.aside-social__link:first-child::before {
   margin-right: 40px;
-}
-
-.social__link:not(:last-child) {
-  margin-bottom: 24px;
-}
-
-.menu-btn__close {
-  position: absolute;
-  top: 48px;
-  right: 31px;
 }
 
 .hero {
@@ -275,6 +234,11 @@ h2 {
 @media screen and (min-width: 768px) {
   .hero {
     background: url("../img/hero/tablet/bg-img@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+    max-width: 609px;
   }
 }
 
@@ -288,6 +252,11 @@ h2 {
 @media screen and (min-width: 1200px) {
   .hero {
     background: url("../img/hero/pc/bg-img@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 680px;
+    max-width: 1125px;
   }
 }
 
@@ -338,25 +307,179 @@ h2 {
   color: #9da4bd;
 }
 
-.wrapper {
+.wrapper__hero-aside {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper__hero-aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-openMob {
+    display: none;
+  }
+}
+
+.menu-container--mobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 338px;
+  padding-left: 40px;
+  padding-right: 103px;
+  padding-top: 118px;
+  padding-bottom: 227px;
+  background: #ffffff;
+  opacity: 1;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.menu-container--mobile.is-hidden {
+  opacity: 0;
+  /* чтобы пропадала подложка backdrop и под ним можно было что-то нажать */
+  pointer-events: none;
+  /* *При выключенном backdrop, свойства modal такие */
+}
+
+.nav-mob--mb {
+  margin-bottom: 64px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-mob__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.nav-mob__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.nav-mob__link {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  color: #303030;
+  text-decoration: none;
+}
+
+.nav-mob__link:hover {
+  color: #ff6c00;
+}
+
+.contacts-mob {
+  margin-bottom: 64px;
+}
+
+.contacts-mob__link {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #303030;
+  text-decoration: none;
+}
+
+.contacts-mob__subscribe-btn {
+  padding: 12px 36px;
+  background: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.contacts-mob__subscribe-btn:hover {
+  color: #ffffff;
+  background: #ff6c00;
+}
+
+.social-mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: block;
+}
+
+.social-mob__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-decoration: none;
+}
+
+.social-mob__link:first-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.aside {
-  display: none;
+.social-mob__link:first-child::before {
+  margin-right: 40px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .aside {
-    display: block;
-    max-width: 120px;
-    outline: 1px solid red;
-  }
+.social-mob__link:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.container-mob--pos {
+  position: relative;
+}
+
+.menu-mobClose {
+  position: absolute;
+  top: 48px;
+  right: 31px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
 }
 /*# sourceMappingURL=main.css.map */
