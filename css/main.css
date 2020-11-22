@@ -732,7 +732,7 @@ h2 {
   margin-right: auto;
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
   .best-barb {
     padding-top: 84px;
     padding-bottom: 84px;
