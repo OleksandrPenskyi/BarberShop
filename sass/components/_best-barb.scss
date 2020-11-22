@@ -1,23 +1,4 @@
 // !ok
-.best-barb {
-  // для мобильного
-  @media screen and (max-width: 767px) {
-    padding-top: 84px;
-    padding-bottom: 84px;
-  }
-
-  // для планшета
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  // для ПК
-  @media screen and (min-width: 1280px) {
-    padding-top: 130px;
-    padding-bottom: 130px;
-  }
-}
 
 .best-barb__upper-title {
   margin-bottom: 20px;
