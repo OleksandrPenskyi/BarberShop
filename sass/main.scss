@@ -3,8 +3,9 @@
 
 @import './base';
 
-@import './components/header-mob';
-@import './components/aside';
-@import './components/hero';
-@import './components/menu-mobile';
-@import './components/menu-pc';
+// Header, hero, aside
+@import './components/Header-hero-aside/aside';
+@import './components/Header-hero-aside/header-mob';
+@import './components/Header-hero-aside/hero';
+@import './components/Header-hero-aside/menu-mobile';
+@import './components/Header-hero-aside/menu-pc';
