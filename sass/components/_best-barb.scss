@@ -1,0 +1,146 @@
+// !ok
+.best-barb {
+  // для мобильного
+  @media screen and (max-width: 676px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  // для планшета
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  // для ПК
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.best-barb__upper-title {
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $second-font-color;
+
+  &::before {
+    @extend %line;
+    margin-right: 20px;
+  }
+}
+
+// !ok
+.best-barb__title {
+  margin-bottom: 20px;
+
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $second-font-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+// !ok
+.best-barb__text-first {
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.02em;
+  color: $main-font-color;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+// !ok
+.best-barb__text-second {
+  margin-bottom: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: $main-font-color;
+}
+
+// !ok
+.best-barb__button {
+  @extend %subscribe-btn;
+}
+
+.best-barb__wrapper {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+}
+
+.best-barb__img {
+  display: none;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 64px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.best-barb__img--size {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: block;
+    width: 330px;
+    height: 235px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    width: 270px;
+    height: 445px;
+
+    &:first-child {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+}

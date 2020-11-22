@@ -26,16 +26,23 @@ h2 {
   padding-right: 31px;
   padding-left: 31px;
 
+  // для мобильного
   @media screen and (min-width: 480px) {
     width: 480px;
   }
 
+  // для планшета
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-right: 39px;
+    padding-left: 39px;
   }
 
+  // для ПК
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding-right: 55px;
+    padding-left: 55px;
   }
 }
 

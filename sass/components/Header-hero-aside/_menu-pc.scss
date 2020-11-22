@@ -3,14 +3,10 @@
     margin-right: 64px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 71px;
   }
 }
-
-// .nav-pc {
-//   margin-right: 41px;
-// }
 
 .nav-pc__list {
   @extend %list-reset;
@@ -28,25 +24,23 @@
     color: $main-hover-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 23px;
     padding-bottom: 23px;
   }
 }
 
 .contacts-pc {
-  @media screen and (min-width: 767px) and (max-width: 1199px) {
-    display: flex;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-direction: column;
-    align-items: center;
-    margin-left: auto;
   }
 
-  @media screen and (min-width: 767px) and (min-width: 1199px) {
-    display: flex;
+  @media screen and (min-width: 1280px) {
     flex-direction: row-reverse;
-    align-items: center;
-    margin-left: auto;
   }
 }
 
@@ -59,7 +53,7 @@
   color: $third-font-color;
   text-decoration: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 40px;
     padding-top: 23px;
     padding-bottom: 23px;
@@ -72,7 +66,7 @@
     background: $main-hover-color;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding: 12px 20px;
     margin-bottom: 20px;
     background: transparent;
@@ -87,7 +81,7 @@
     color: $third-font-color;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding: 12px 20px;
     background: transparent;
     border: 1px solid $main-hover-color;
@@ -103,7 +97,7 @@
 }
 
 .wrapper-position-pc {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     position: absolute;
     top: 32px;
     left: 50%;
@@ -121,7 +115,7 @@
     align-items: flex-start;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     position: absolute;
     top: 32px;
     left: 50%;
@@ -159,7 +153,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     &:not(:last-child) {
       margin-right: 40px;
     }

@@ -85,7 +85,7 @@
             <!-- меню для планшета и ПК -->
             <nav class="nav-pc">
               <ul class="nav-pc__list">
-                <li class="nav-pc__item"><a class="nav-pc__link" href="#">О нас</a></li>
+                <li class="nav-pc__item"><a class="nav-pc__link" href="#best-barb">О нас</a></li>
                 <li class="nav-pc__item"><a class="nav-pc__link" href="#">Услуги и цены</a></li>
                 <li class="nav-pc__item"><a class="nav-pc__link" href="#">Мастера</a></li>
                 <li class="nav-pc__item"><a class="nav-pc__link" href="#">Контакты</a></li>
@@ -124,6 +124,116 @@
           </div>
         </section>
       </div>
+
+      <!-- Лучший барбершоп -->
+      <section class="best-barb" id="best-barb">
+        <div class="container">
+          <!-- Оббертка для двух блоков -->
+          <div class="best-barb__wrapper">
+            <!-- Блок с картнками -->
+            <div class="best-barb__img">
+              <picture class="best-barb__img--size">
+                <!-- Только для ПК в формате webp -->
+                <source
+                  srcset="./img/section-2/pc/img-1@1x.webp 1x, ./img/section-2/pc/img-1@2x.webp 2x"
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+
+                <!-- Только для ПК в формате jpg -->
+                <source
+                  srcset="./img/section-2/pc/img-1@1x.jpg 1x, ./img/section-2/pc/img-1@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- Только для планшета в формате webp -->
+                <source
+                  srcset="
+                    ./img/section-2/tablet/img-1@1x.webp 1x,
+                    ./img/section-2/tablet/img-1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <!-- Только для планшета в формате jpg -->
+                <source
+                  srcset="
+                    ./img/section-2/tablet/img-1@1x.jpg 1x,
+                    ./img/section-2/tablet/img-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/section-2/tablet/img-1@1x.jpg"
+                  alt="Бритье шеи"
+                  aria-label="Бритье шеи"
+                />
+              </picture>
+
+              <picture class="best-barb__img--size">
+                <!-- Только для ПК в формате webp -->
+                <source
+                  srcset="./img/section-2/pc/img-2@1x.webp 1x, ./img/section-2/pc/img-2@2x.webp 2x"
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+
+                <!-- Только для ПК в формате jpg -->
+                <source
+                  srcset="./img/section-2/pc/img-2@1x.jpg 1x, ./img/section-2/pc/img-2@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- Только для планшета в формате webp -->
+                <source
+                  srcset="
+                    ./img/section-2/tablet/img-2@1x.webp 1x,
+                    ./img/section-2/tablet/img-2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <!-- Только для планшета в формате jpg -->
+                <source
+                  srcset="
+                    ./img/section-2/tablet/img-2@1x.jpg 1x,
+                    ./img/section-2/tablet/img-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/section-2/tablet/img-2@1x.jpg"
+                  alt="Бритье затылка"
+                  aria-label="Бритье затылка"
+                />
+              </picture>
+            </div>
+            <!-- Блок-описание -->
+            <div class="best-barb__description">
+              <span class="best-barb__upper-title">О НАС</span>
+              <h2 class="best-barb__title">Лучший Барбершоп твоего города</h2>
+              <p class="best-barb__text-first">
+                Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+              </p>
+              <p class="best-barb__text-second">
+                Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И
+                когда ты попадешь в руки нашего мастера, то уже никогда не сможешь быть прежним. Мы
+                команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы
+                усовершенствовать каждого, кто к нам приходит!
+              </p>
+              <button class="best-barb__button" type="button">онлайн-запись</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/modal.js"></script>
   </body>
