@@ -1,0 +1,102 @@
+.logo-pc__link {
+  margin-right: 64px;
+}
+
+.nav-pc {
+  margin-right: 41px;
+}
+
+.nav-pc__list {
+  @extend %list-reset;
+}
+
+.nav-pc__link {
+  font-weight: 600;
+  font-size: 12px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: $third-font-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $main-hover-color;
+  }
+}
+
+.contacts-pc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts-pc__link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $third-font-color;
+  text-decoration: none;
+}
+
+.contacts-pc__subscribe-btn {
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  background: transparent;
+  border: 1px solid $main-hover-color;
+  border-radius: 25px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: $third-font-color;
+
+  &:hover {
+    color: $third-font-color;
+    background: $main-hover-color;
+  }
+}
+
+.wrapper-position-pc {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 768px;
+  padding-left: 50px;
+  padding-right: 39px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.wrapper-pc--LogoMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-pc__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-pc__item {
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.container-pc {
+  width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -72,22 +72,10 @@
   &:hover {
     color: $main-hover-color;
   }
-
-  // @media screen and (min-width: 768px) {
-  //   font-size: 12px;
-  //   line-height: 1.33;
-  //   color: $third-font-color;
-  // }
 }
 
 .contacts-mob {
   margin-bottom: 64px;
-
-  // @media screen and (min-width: 768px) {
-  //   // display: flex;
-  //   // flex-direction: column-reverse;
-  //   margin-bottom: 0;
-  // }
 }
 
 .contacts-mob__link {
@@ -100,14 +88,6 @@
   text-transform: uppercase;
   color: $second-font-color;
   text-decoration: none;
-
-  // @media screen and (min-width: 768px) {
-  //   margin-bottom: 0;
-
-  //   font-size: 12px;
-  //   line-height: 1.33;
-  //   color: $third-font-color;
-  // }
 }
 
 .contacts-mob__subscribe-btn {
@@ -187,8 +167,4 @@
   background-color: transparent;
   border: none;
   z-index: 100;
-
-  // @media screen and (min-width: 768px) {
-  //   display: none;
-  // }
 }

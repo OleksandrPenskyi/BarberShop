@@ -6,13 +6,12 @@
 
   //   для планшета и ПК
   @media screen and (min-width: 768px) {
-    fill: #000000;
+    fill: #fff;
   }
 }
 
-// кнопка открытия меню
+// кнопка открытия меню для телефона
 .menu-openMob {
-  // для телефона
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -17,18 +17,15 @@
   }
 }
 
-.aside-social {
-  display: flex;
-  flex-direction: row;
-  transform: rotate(-90deg) translateX(-591px);
-}
-
 .aside__wrapper {
-  display: flex;
-  flex-direction: row;
-  transform: rotate(-90deg);
-  position: relative;
-  top: 551px;
+  // Позиционирую относительно самого себя и двигаю вниз
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: row;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 551px;
+  }
 }
 
 .aside-social__link {
