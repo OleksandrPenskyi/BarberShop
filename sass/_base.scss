@@ -58,3 +58,7 @@ h2 {
     display: block;
   }
 }
+
+.visually-hidden {
+  @extend %visually-hidden;
+}

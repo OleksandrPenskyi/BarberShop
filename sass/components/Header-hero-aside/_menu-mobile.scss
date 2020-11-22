@@ -91,41 +91,14 @@
 }
 
 .contacts-mob__subscribe-btn {
-  padding: 12px 36px;
-
-  background: transparent;
-  border: 1px solid $main-hover-color;
-  border-radius: 25px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  &:hover {
-    color: $third-font-color;
-    background: $main-hover-color;
-  }
-
-  // @media screen and (min-width: 768px) {
-  //   margin-bottom: 20px;
-  //   color: $third-font-color;
-  //   padding: 12px 20px;
-  // }
+  @extend %subscribe-btn;
 }
 
 .social-mob {
-  // для мобильного
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   display: block;
-
-  // для планшета и ПК
-  // @media screen and (min-width: 768px) {
-  //   display: none;
-  // }
 }
 
 .social-mob__link {

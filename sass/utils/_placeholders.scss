@@ -20,3 +20,33 @@
   color: $second-font-color;
   text-decoration: none;
 }
+
+%subscribe-btn {
+  padding: 12px 36px;
+
+  background: transparent;
+  border: 1px solid $main-hover-color;
+  border-radius: 25px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $third-font-color;
+    background: $main-hover-color;
+  }
+}
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

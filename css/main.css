@@ -22,6 +22,34 @@
   text-decoration: none;
 }
 
+.contacts-mob__subscribe-btn {
+  padding: 12px 36px;
+  background: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.contacts-mob__subscribe-btn:hover {
+  color: #ffffff;
+  background: #ff6c00;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
   font-family: Open Sans, sans-serif;
 }
@@ -409,23 +437,6 @@ h2 {
   text-transform: uppercase;
   color: #303030;
   text-decoration: none;
-}
-
-.contacts-mob__subscribe-btn {
-  padding: 12px 36px;
-  background: transparent;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.contacts-mob__subscribe-btn:hover {
-  color: #ffffff;
-  background: #ff6c00;
 }
 
 .social-mob {
