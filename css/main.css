@@ -929,8 +929,8 @@ h2 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("../img/bg-2/mobile/bg-2@1x.jpg");
-  background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("../img/bg-2/mobile/bg-2@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("../img/bg-2/mobile/bg-2@1x.webp");
+  background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("../img/bg-2/mobile/bg-2@1x.webp");
   height: 826px;
   max-width: 480px;
 }
