@@ -1,0 +1,238 @@
+.advantages--ptb {
+  // для мобильного
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  //   для планшета
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    padding-top: 121px;
+    padding-bottom: 135px;
+  }
+}
+
+.advantages__container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  // для мобильного
+  padding-right: 31px;
+  padding-left: 31px;
+  width: 480px;
+
+  //   для планшета
+  @media screen and (min-width: 768px) {
+    padding-right: 39px;
+    padding-left: 39px;
+    width: 768px;
+  }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    padding-right: 125px;
+    padding-left: 155px;
+    width: 1280px;
+  }
+}
+
+.square {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 450px;
+    height: 331px;
+    margin-left: auto;
+  }
+}
+
+.square__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+
+  //   для мобильного
+  padding: 20px 35px;
+  width: 193px;
+  height: 133px;
+
+  &:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+
+  &:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+
+  //   для планшета
+  @media screen and (min-width: 768px) {
+    padding: 20px 44px;
+
+    width: 210px;
+    height: 133px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-of-type(2) {
+      position: relative;
+      top: 35px;
+    }
+
+    &:nth-of-type(4) {
+      position: relative;
+      top: 35px;
+    }
+  }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    padding: 20px 24px;
+
+    width: 170px;
+    height: 133px;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-of-type(1) {
+      position: relative;
+      top: 0;
+    }
+
+    &:nth-of-type(2) {
+      position: relative;
+      top: 35px;
+    }
+
+    &:nth-of-type(4) {
+      position: relative;
+      top: 35px;
+    }
+  }
+}
+
+.square__number {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: $second-font-color;
+  margin-bottom: 6px;
+}
+
+.square__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: $second-font-color;
+  text-align: center;
+
+  &.last-item {
+    font-size: 10px;
+  }
+}
+
+.square__plus {
+  position: absolute;
+  top: 27px;
+  right: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: $main-hover-color;
+  display: block;
+  width: 13px;
+  height: 22px;
+}
+
+.advantages__describe {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 44px;
+    max-width: 500px;
+  }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    top: 9px;
+
+    margin-left: 130px;
+  }
+}
+
+.advantages__upper-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $second-font-color;
+
+  &::before {
+    @extend %line;
+    background: $second-font-color;
+    margin-right: 20px;
+  }
+}
+
+.advantages__title {
+  margin-bottom: 20px;
+
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $second-font-color;
+}
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $main-font-color;
+}
+
+.advantages__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+}
