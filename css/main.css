@@ -946,8 +946,8 @@ h2 {
 
 @media screen and (min-width: 768px) {
   .price {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("../../img/bg-2/tablet/bg-2@1x.jpg");
-    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("../../img/bg-2/tablet/bg-2@1x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("../../../img/bg-2/tablet/bg-2@1x.jpg");
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("../../../img/bg-2/tablet/bg-2@1x.jpg");
     height: 858px;
     max-width: 768px;
   }
@@ -955,8 +955,8 @@ h2 {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("../../img/bg-2/tablet/bg-2@2x.jpg");
-    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("../../img/bg-2/tablet/bg-2@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url("../../../img/bg-2/tablet/bg-2@2x.jpg");
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url("../../../img/bg-2/tablet/bg-2@2x.jpg");
     height: 858px;
     max-width: 768px;
   }
