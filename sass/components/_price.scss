@@ -10,7 +10,8 @@
 
   // для телефона
   background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
-    url('../../img/bg-2/mobile/bg-2@1x.jpg');
+    url('../img/bg-2/mobile/bg-2@1x.jpg');
+
   height: 826px;
   max-width: 480px;
 
@@ -19,7 +20,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
-      url('../../img/bg-2/mobile/bg-2@2x.jpg');
+      url('../img/bg-2/mobile/bg-2@2x.jpg');
     height: 826px;
     max-width: 480px;
   }
