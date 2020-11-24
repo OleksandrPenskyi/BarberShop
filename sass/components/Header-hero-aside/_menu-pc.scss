@@ -20,7 +20,8 @@
   color: $third-font-color;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $main-hover-color;
   }
 
@@ -61,7 +62,8 @@
 }
 
 .contacts-pc__subscribe-btn {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $third-font-color;
     background: $main-hover-color;
   }

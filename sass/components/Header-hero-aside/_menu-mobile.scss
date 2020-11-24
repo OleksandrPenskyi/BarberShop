@@ -62,7 +62,8 @@
   color: $second-title-font;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $main-hover-color;
   }
 }

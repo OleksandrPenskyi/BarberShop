@@ -34,7 +34,8 @@
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $third-font-color;
     background: $main-hover-color;
   }

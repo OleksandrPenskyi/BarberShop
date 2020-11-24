@@ -24,7 +24,20 @@
   align-items: center;
 }
 
-.label {
+.form__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 44px;
+}
+
+.form__label {
+  position: absolute;
+  left: 0;
+  bottom: 9px;
+
+  pointer-events: none;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -33,30 +46,101 @@
   color: rgba(157, 164, 189, 0.4);
 }
 
-.input {
+.form__input {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 9px;
+
   background: transparent;
   outline: none;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $third-font-color;
+    color: $third-font-color;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &:focus + .form__label,
+  &:not(:placeholder-shown) + .form__label {
+    @extend %visually-hidden;
+  }
 }
 
-.input:focus {
-  outline: none;
-  border-color: $third-font-color;
-}
-
-.input:focus + .label {
-  color: $third-font-color;
+.form__name,
+.form__tel {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
 }
 
 .form__name {
-  position: relative;
+  margin-right: 30px;
 }
 
-.label {
+.form__textarea {
+  position: relative;
+
+  max-width: 530px;
+  height: 76px;
+
+  margin-bottom: 44px;
+}
+
+.textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+
+  resize: none;
+  outline: none;
+
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    border-color: $third-font-color;
+    color: $third-font-color;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &:focus + .textarea__label,
+  &:not(:placeholder-shown) + .textarea__label {
+    @extend %visually-hidden;
+  }
+}
+
+.textarea__label {
   position: absolute;
+  top: 0;
   left: 0;
-  bottom: 9px;
+
+  pointer-events: none;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.suscribe-btn {
+  @extend %subscribe-btn;
+  color: $third-font-color;
 }
 
 // !Форма

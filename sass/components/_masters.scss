@@ -152,7 +152,8 @@
   border-radius: 50%;
   background: $main-bg-color;
 
-  &:hover .social__svg {
+  &:hover .social__svg,
+  &:focus .social__svg {
     fill: $main-hover-color;
   }
 }
