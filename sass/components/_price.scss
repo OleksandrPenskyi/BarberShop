@@ -1,5 +1,5 @@
-.price {
-  width: 100%;
+.price--size {
+  // width: 100%;
 
   margin-left: auto;
   margin-right: auto;
@@ -67,11 +67,7 @@
   @extend %f-row-a;
   margin-bottom: 20px;
 
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  @extend %upper-title;
   color: rgba(157, 164, 189, 0.6);
 
   &::before {

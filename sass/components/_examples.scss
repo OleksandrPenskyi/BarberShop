@@ -1,0 +1,85 @@
+.examples--ptb {
+  // для телефона
+  @media screen and (max-width: 767px) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  //   для планшета
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+
+.examples__list {
+  @extend %list-reset;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.examples__item {
+  // для телефона
+  @media screen and (max-width: 767px) {
+    max-width: 418px;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  //   для планшета
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 330px;
+    height: auto;
+
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+
+  //   для ПК
+  @media screen and (min-width: 1280px) {
+    max-width: 270px;
+    height: auto;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+// !ok
+.examples__upper-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 44px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $second-font-color;
+
+  &::before {
+    @extend %line;
+    color: $second-font-color;
+
+    margin-right: 20px;
+  }
+}

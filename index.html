@@ -42,10 +42,12 @@
           <nav class="nav-mob nav-mob--mb">
             <ul class="nav-mob__list">
               <li class="nav-mob__item">
-                <a class="nav-mob__link" href="#best-barbSection" data-modal-close>О нас</a>
+                <a class="nav-mob__link" href="#best-barbSection">О нас</a>
               </li>
-              <li class="nav-mob__item"><a class="nav-mob__link" href="#">Услуги и цены</a></li>
-              <li class="nav-mob__item"><a class="nav-mob__link" href="#">Мастера</a></li>
+              <li class="nav-mob__item">
+                <a class="nav-mob__link" href="#price">Услуги и цены</a>
+              </li>
+              <li class="nav-mob__item"><a class="nav-mob__link" href="#masters">Мастера</a></li>
               <li class="nav-mob__item"><a class="nav-mob__link" href="#">Контакты</a></li>
             </ul>
           </nav>
@@ -90,8 +92,10 @@
                 <li class="nav-pc__item">
                   <a class="nav-pc__link" href="#best-barbSection">О нас</a>
                 </li>
-                <li class="nav-pc__item"><a class="nav-pc__link" href="#">Услуги и цены</a></li>
-                <li class="nav-pc__item"><a class="nav-pc__link" href="#">Мастера</a></li>
+                <li class="nav-pc__item">
+                  <a class="nav-pc__link" href="#price">Услуги и цены</a>
+                </li>
+                <li class="nav-pc__item"><a class="nav-pc__link" href="#masters">Мастера</a></li>
                 <li class="nav-pc__item"><a class="nav-pc__link" href="#">Контакты</a></li>
               </ul>
             </nav>
@@ -241,7 +245,7 @@
       </section>
 
       <!-- Секция с ценами -->
-      <section class="price section--ptb">
+      <section class="price price--size" id="price">
         <div class="container">
           <span class="price__upper-title">Проведи время в компании лучших мастеров</span>
           <h2 class="price__title">Услуги и цены</h2>
@@ -333,27 +337,23 @@
               <div class="square__item">
                 <span class="square__number">600</span>
                 <p class="square__text">Довольных клиентов в день</p>
-                <span class="square__plus">+</span>
               </div>
               <div class="square__item">
                 <span class="square__number">50</span>
                 <p class="square__text">Наград за отличный сервис</p>
-                <span class="square__plus">+</span>
               </div>
               <div class="square__item">
                 <span class="square__number">20</span>
                 <p class="square__text">Лучших мастеров Киева</p>
-                <span class="square__plus">+</span>
               </div>
               <div class="square__item">
                 <span class="square__number">100</span>
                 <p class="square__text last-item">Подарков постоянным клиентам</p>
-                <span class="square__plus">+</span>
               </div>
             </div>
 
             <!-- Описание -->
-            <div class="advantages__describe">
+            <div class="advantages__description">
               <span class="advantages__upper-title">старая традиционная школа</span>
               <h2 class="advantages__title">Почему приходят именно к нам?</h2>
               <p class="advantages__text">
@@ -364,6 +364,639 @@
           </div>
         </div>
       </section>
+
+      <!-- Секиця наши мастера -->
+      <section class="masters" id="masters">
+        <div class="container masters__container">
+          <span class="masters__upper-title">для настоящих ценителей атмосферы</span>
+          <h2 class="masters__title">Наши мастера</h2>
+          <ul class="masters__list">
+            <!-- Фото № 1 -->
+            <li class="masters__item">
+              <picture>
+                <!-- для ПК в формате webp  -->
+                <source
+                  srcset="./img/masters/pc/img1@1x.webp 1x, ./img/masters/pc/img1@2x.webp 2x"
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+
+                <!-- для ПК в формате jpg  -->
+                <source
+                  srcset="./img/masters/pc/img1@1x.jpg 1x, ./img/masters/pc/img1@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшета в формате webp  -->
+                <source
+                  srcset="
+                    ./img/masters/tablet/img1@1x.webp 1x,
+                    ./img/masters/tablet/img1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <!-- для планшета в формате jpg  -->
+                <source
+                  srcset="./img/masters/tablet/img1@1x.jpg 1x, ./img/masters/tablet/img1@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для мобильного в формате webp  -->
+                <source
+                  srcset="
+                    ./img/masters/mobile/img1@1x.webp 1x,
+                    ./img/masters/mobile/img1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <!-- для мобильного в формате jpg  -->
+                <source
+                  srcset="./img/masters/mobile/img1@1x.jpg 1x, ./img/masters/mobile/img1@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/masters/mobile/img1@1x.jpg"
+                  alt="Фото Джона Смитта"
+                  aria-label="Фото Джона Смитта"
+                />
+              </picture>
+
+              <div class="masters__description">
+                <h3 class="masters__name">John Smith</h3>
+                <p class="masters__position">Extreme Barber</p>
+
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.instagram.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://twitter.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.facebook.com/">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.linkedin.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="../img/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Фото № 2 -->
+            <li class="masters__item">
+              <picture>
+                <!-- для ПК в формате webp  -->
+                <source
+                  srcset="./img/masters/pc/img2@1x.webp 1x, ./img/masters/pc/img2@2x.webp 2x"
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+
+                <!-- для ПК в формате jpg  -->
+                <source
+                  srcset="./img/masters/pc/img2@1x.jpg 1x, ./img/masters/pc/img2@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшета в формате webp  -->
+                <source
+                  srcset="
+                    ./img/masters/tablet/img2@1x.webp 1x,
+                    ./img/masters/tablet/img2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <!-- для планшета в формате jpg  -->
+                <source
+                  srcset="./img/masters/tablet/img2@1x.jpg 1x, ./img/masters/tablet/img2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для мобильного в формате webp  -->
+                <source
+                  srcset="
+                    ./img/masters/mobile/img2@1x.webp 1x,
+                    ./img/masters/mobile/img2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <!-- для мобильного в формате jpg  -->
+                <source
+                  srcset="./img/masters/mobile/img2@1x.jpg 1x, ./img/masters/mobile/img2@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/masters/mobile/img2@1x.jpg"
+                  alt="Фото Майкла Доу"
+                  aria-label="Фото Майкла Доу"
+                />
+              </picture>
+
+              <div class="masters__description">
+                <h3 class="masters__name">Michele Doe</h3>
+                <p class="masters__position">Extreme Barber</p>
+
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.instagram.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://twitter.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.facebook.com/">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.linkedin.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="../img/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Фото № 3 -->
+            <li class="masters__item">
+              <picture>
+                <!-- для ПК в формате webp  -->
+                <source
+                  srcset="./img/masters/pc/img3@1x.webp 1x, ./img/masters/pc/img3@2x.webp 2x"
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+
+                <!-- для ПК в формате jpg  -->
+                <source
+                  srcset="./img/masters/pc/img3@1x.jpg 1x, ./img/masters/pc/img3@2x.jpg 2x"
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшета в формате webp  -->
+                <source
+                  srcset="
+                    ./img/masters/tablet/img3@1x.webp 1x,
+                    ./img/masters/tablet/img3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+
+                <!-- для планшета в формате jpg  -->
+                <source
+                  srcset="./img/masters/tablet/img3@1x.jpg 1x, ./img/masters/tablet/img3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для мобильного в формате webp  -->
+                <source
+                  srcset="
+                    ./img/masters/mobile/img3@1x.webp 1x,
+                    ./img/masters/mobile/img3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+
+                <!-- для мобильного в формате jpg  -->
+                <source
+                  srcset="./img/masters/mobile/img3@1x.jpg 1x, ./img/masters/mobile/img3@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/masters/mobile/img3@1x.jpg"
+                  alt="Фото Алана Блэка"
+                  aria-label="Фото Алана Блэка"
+                />
+              </picture>
+
+              <div class="masters__description">
+                <h3 class="masters__name">Alan Black</h3>
+                <p class="masters__position">Extreme Barber</p>
+
+                <div class="social">
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.instagram.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://twitter.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.facebook.com/">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="./img/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="https://www.linkedin.com">
+                        <svg class="social__svg" width="20" height="20">
+                          <use href="../img/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Примеры работ -->
+      <section class="examples examples--ptb">
+        <div class="container">
+          <span class="examples__upper-title">На латинском языке “барба” означает “борода”</span>
+          <ul class="examples__list">
+            <li class="examples__item">
+              <!-- Фото № 1 -->
+              <picture>
+                <!-- для ПК в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img1@1x.webp 1x,
+                    ./img/work-example/pc/img1@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <!-- для ПК в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img1@1x.jpg 1x,
+                    ./img/work-example/pc/img1@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшшета в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img1@1x.webp 1x,
+                    ./img/work-example/tablet/img1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <!-- для планшшета в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img1@1x.jpg 1x,
+                    ./img/work-example/tablet/img1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для телефона в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img1@1x.webp 1x,
+                    ./img/work-example/mobile/img1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <!-- для телефона в формате jpg -->
+
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img1@1x.jpg 1x,
+                    ./img/work-example/mobile/img1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/work-example/mobile/img1@1x.jpg"
+                  alt="Стрижка под машинку"
+                  aria-label="Фото стрижки под машинку"
+                />
+              </picture>
+            </li>
+
+            <li class="examples__item">
+              <!-- Фото № 2 -->
+              <picture>
+                <!-- для ПК в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img2@1x.webp 1x,
+                    ./img/work-example/pc/img2@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <!-- для ПК в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img2@1x.jpg 1x,
+                    ./img/work-example/pc/img2@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшшета в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img2@1x.webp 1x,
+                    ./img/work-example/tablet/img2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <!-- для планшшета в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img2@1x.jpg 1x,
+                    ./img/work-example/tablet/img2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для телефона в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img2@1x.webp 1x,
+                    ./img/work-example/mobile/img2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <!-- для телефона в формате jpg -->
+
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img2@1x.jpg 1x,
+                    ./img/work-example/mobile/img2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/work-example/mobile/img2@1x.jpg"
+                  alt="Нанесение крема для бритья на бороду"
+                  aria-label="Фото нанесения крема для бритья на бороду"
+                />
+              </picture>
+            </li>
+
+            <li class="examples__item">
+              <!-- Фото № 3 -->
+              <picture>
+                <!-- для ПК в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img3@1x.webp 1x,
+                    ./img/work-example/pc/img3@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <!-- для ПК в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img3@1x.jpg 1x,
+                    ./img/work-example/pc/img3@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшшета в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img3@1x.webp 1x,
+                    ./img/work-example/tablet/img3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <!-- для планшшета в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img3@1x.jpg 1x,
+                    ./img/work-example/tablet/img3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для телефона в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img3@1x.webp 1x,
+                    ./img/work-example/mobile/img3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <!-- для телефона в формате jpg -->
+
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img3@1x.jpg 1x,
+                    ./img/work-example/mobile/img3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/work-example/mobile/img3@1x.jpg"
+                  alt="Разогревание кожи лица теплым полотенцем"
+                  aria-label="Фото разогревание кожи лица теплым полотенцем"
+                />
+              </picture>
+            </li>
+
+            <li class="examples__item">
+              <!-- Фото № 4 -->
+              <picture>
+                <!-- для ПК в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img4@1x.webp 1x,
+                    ./img/work-example/pc/img4@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <!-- для ПК в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/pc/img4@1x.jpg 1x,
+                    ./img/work-example/pc/img4@2x.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/jpg"
+                />
+
+                <!-- для планшшета в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img4@1x.webp 1x,
+                    ./img/work-example/tablet/img4@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <!-- для планшшета в формате jpg -->
+                <source
+                  srcset="
+                    ./img/work-example/tablet/img4@1x.jpg 1x,
+                    ./img/work-example/tablet/img4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpg"
+                />
+
+                <!-- для телефона в формате webp -->
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img4@1x.webp 1x,
+                    ./img/work-example/mobile/img4@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <!-- для телефона в формате jpg -->
+
+                <source
+                  srcset="
+                    ./img/work-example/mobile/img4@1x.jpg 1x,
+                    ./img/work-example/mobile/img4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpg"
+                />
+
+                <img
+                  src="./img/work-example/mobile/img4@1x.jpg"
+                  alt="Бритье затылка"
+                  aria-label="Фото бритья затылка"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer footer--ptb">
+        <div class="footer__container">
+          <div class="footer_wrapper">
+            <!-- Онлайн регистрация -->
+            <section class="registration registration--p">
+              <h2 class="registration__title">Онлайн-запись</h2>
+              <form class="form">
+                <div class="form__name" role="group">
+                  <input class="input" type="text" name="name" id="name" />
+                  <label class="label" for="name">Имя*</label>
+                </div>
+              </form>
+            </section>
+
+            <!-- Контакты -->
+            <section class="contacts contacts-p">
+              <h2 class="contacts__title">Контакты</h2>
+              <address class="address address--mb">
+                <a
+                  class="address__map"
+                  href="https://goo.gl/maps/qd8McCtAAQD9RLAi8"
+                  target="_blank"
+                >
+                  <svg class="address__map-svg" width="24px" height="24px">
+                    <use href="./img/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  ул. Васильковая, 7А <br />Киев, 08132
+                </a>
+                <a class="address__tel" href="tel:+380441111111">
+                  <svg class="address__tel-svg" width="24px" height="24px">
+                    <use href="./img/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a
+                >
+                <a class="address__mail" href="mailto:barbershop@email.com">
+                  <svg class="address__mail-svg" width="24px" height="24px">
+                    <use href="./img/icons.svg#icon-mail"></use>
+                  </svg>
+
+                  barbershop@email.com</a
+                >
+              </address>
+              <b class="contacts__work-time">время работы</b>
+              <b class="contacts__shedule">Ежедневно с 9:00 до 22:00</b>
+            </section>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="./js/modal.js"></script>
   </body>

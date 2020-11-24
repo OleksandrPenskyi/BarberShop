@@ -1,0 +1,233 @@
+.footer--ptb {
+  // для мобильного
+  @media screen and (max-width: 767px) {
+    padding-bottom: 84px;
+  }
+
+  // для планшета
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-bottom: 100px;
+  }
+}
+
+.footer__container {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+}
+
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.input {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.input:focus {
+  outline: none;
+  border-color: $third-font-color;
+}
+
+.input:focus + .label {
+  color: $third-font-color;
+}
+
+.form__name {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  bottom: 9px;
+}
+
+// !Форма
+
+.registration--p {
+  @media screen and (min-width: 1280px) {
+    height: 644px;
+    width: 100%;
+    max-width: 640px;
+
+    background: #191c26;
+    padding-top: 130px;
+    padding-left: 55px;
+  }
+}
+
+.registration__title {
+  margin-bottom: 44px;
+
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $main-title-font;
+}
+
+// !КОНТАКТЫ
+
+// !ok
+.contacts__title {
+  margin-bottom: 40px;
+
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: $main-title-font;
+}
+
+.address--mb {
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 70px;
+  }
+}
+
+.address__map,
+.address__tel,
+.address__mail,
+.contacts__shedule {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: $comercial-font-color;
+}
+
+.address__map {
+  text-decoration: none;
+}
+
+.address__tel {
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    text-decoration: none;
+  }
+}
+
+.contacts__work-time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $main-title-font;
+
+  &::before {
+    margin-right: 20px;
+    @extend %line;
+
+    background: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.contacts-p {
+  max-width: 625px;
+  width: 100%;
+
+  padding-top: 130px;
+  padding-bottom: 130px;
+  padding-left: 100px;
+}
+
+.contacts {
+  // margin-left: auto;
+  // margin-right: auto;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // для телефона
+  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+    url('../img/bg-footer/mobile/bg-footer@1x.jpg');
+
+  height: 496px;
+  max-width: 480px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+      url('../img/bg-footer/mobile/bg-footer@2x.jpg');
+    height: 496px;
+    max-width: 480px;
+  }
+
+  // для планшета
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+      url('../img/bg-footer/tablet/bg-footer@1x.jpg');
+    height: 449px;
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+      url('../img/bg-footer/tablet/bg-footer@2x.jpg');
+    height: 449px;
+    max-width: 768px;
+  }
+
+  // для ПК
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+      url('../img/bg-footer/pc/bg-footer@1x.jpg');
+    height: 644px;
+    max-width: 640px;
+  }
+
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(25, 28, 38, 0.9), rgba(25, 28, 38, 0.9)),
+      url('../img/bg-footer/pc/bg-footer@2x.jpg');
+    height: 644px;
+    max-width: 640px;
+  }
+}
+
+.address__map-svg,
+.address__tel-svg,
+.address__mail-svg {
+  margin-right: 16px;
+}

@@ -1,12 +1,17 @@
 .advantages--ptb {
-  // для мобильного
   padding-top: 84px;
   padding-bottom: 84px;
+
+  // для мобильного
+  @media screen and (min-width: 480px) {
+    padding-top: 84px;
+    padding-bottom: 119px;
+  }
 
   //   для планшета
   @media screen and (min-width: 768px) {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 135px;
   }
 
   //   для ПК
@@ -25,20 +30,38 @@
   // для мобильного
   padding-right: 31px;
   padding-left: 31px;
-  width: 480px;
+  max-width: 480px;
 
   //   для планшета
   @media screen and (min-width: 768px) {
     padding-right: 39px;
     padding-left: 39px;
-    width: 768px;
+    max-width: 768px;
   }
 
   //   для ПК
   @media screen and (min-width: 1280px) {
     padding-right: 125px;
     padding-left: 155px;
-    width: 1280px;
+    max-width: 1280px;
+  }
+}
+
+.advantages__wrapper {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
   }
 }
 
@@ -46,6 +69,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 450px;
@@ -65,15 +89,31 @@
 
   //   для мобильного
   padding: 20px 35px;
-  width: 193px;
+  max-width: 193px;
   height: 133px;
 
-  &:not(:nth-child(2n)) {
-    margin-right: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
 
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+    &:nth-of-type(2) {
+      position: relative;
+      top: 35px;
+    }
+
+    &:nth-of-type(4) {
+      position: relative;
+      top: 35px;
+    }
   }
 
   //   для планшета
@@ -135,6 +175,9 @@
 }
 
 .square__number {
+  display: flex;
+  flex-direction: row;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
@@ -142,6 +185,22 @@
   letter-spacing: 0.05em;
   color: $second-font-color;
   margin-bottom: 6px;
+
+  &::after {
+    position: relative;
+    top: 7px;
+    margin-left: 2px;
+
+    display: block;
+    content: '+';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.375;
+    color: $main-hover-color;
+    display: block;
+    width: 13px;
+    height: 22px;
+  }
 }
 
 .square__text {
@@ -156,20 +215,14 @@
   }
 }
 
-.square__plus {
-  position: absolute;
-  top: 27px;
-  right: 30px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.375;
-  color: $main-hover-color;
-  display: block;
-  width: 13px;
-  height: 22px;
-}
+.advantages__description {
+  // для мобильного
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+    width: 100%;
+  }
 
-.advantages__describe {
+  // для планшета
   @media screen and (min-width: 768px) {
     margin-bottom: 44px;
     max-width: 500px;
@@ -222,17 +275,4 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: $main-font-color;
-}
-
-.advantages__wrapper {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-  }
 }
