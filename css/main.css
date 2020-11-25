@@ -2107,6 +2107,26 @@ h3 {
   text-decoration: none;
 }
 
+.pc-visible {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .pc-visible {
+    display: block;
+  }
+}
+
+.mob-visible {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-visible {
+    display: none;
+  }
+}
+
 .address__tel {
   margin-top: 20px;
   margin-bottom: 20px;

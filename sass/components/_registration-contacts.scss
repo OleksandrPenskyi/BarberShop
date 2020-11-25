@@ -292,6 +292,20 @@
   text-decoration: none;
 }
 
+.pc-visible {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.mob-visible {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .address__tel {
   // @media screen and (min-width: 768px) {
   margin-top: 20px;
