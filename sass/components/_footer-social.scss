@@ -31,9 +31,16 @@
   flex-direction: row;
   align-items: center;
 
-  &::before {
-    @extend %line;
-    margin-right: 40px;
+  @media screen and (min-width: 768px) {
+    &::before {
+      display: block;
+      content: '';
+      width: 60px;
+      height: 1px;
+      background: $second-font-color;
+
+      margin-right: 40px;
+    }
   }
 }
 

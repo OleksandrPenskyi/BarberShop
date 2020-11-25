@@ -1,35 +1,46 @@
-.footer--ptb {
-  // для мобильного
-  @media screen and (max-width: 767px) {
-    padding-bottom: 84px;
-  }
-
-  // для планшета
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-bottom: 100px;
-  }
-}
-
 .footer__container {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1280px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 
 .footer_wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  // для мобильного и планшета
+  @media screen and (max-width: 1279px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // для ПК
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .form__wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-  margin-bottom: 44px;
+    margin-bottom: 44px;
+  }
 }
 
 .form__label {
@@ -78,20 +89,62 @@
 .form__tel {
   position: relative;
   width: 100%;
-  max-width: 250px;
+
+  // для планшета
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    max-width: 330px;
+  }
+
+  // для ПК
+  @media screen and (min-width: 1280px) {
+    max-width: 250px;
+  }
 }
 
 .form__name {
-  margin-right: 30px;
+  // для мобильного
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+
+  // для планшета и ПК
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+  }
+}
+
+.form__tel {
+  // для мобильного
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
 }
 
 .form__textarea {
   position: relative;
 
-  max-width: 530px;
-  height: 76px;
+  // для мобильного
+  @media screen and (max-width: 767px) {
+    max-width: 419px;
+    height: 76px;
+    margin-bottom: 44px;
+  }
 
-  margin-bottom: 44px;
+  // для ПК
+  @media screen and (min-width: 768px) {
+    max-width: 690px;
+    height: 76px;
+
+    margin-bottom: 44px;
+  }
+
+  // для ПК
+  @media screen and (min-width: 1280px) {
+    max-width: 530px;
+    height: 76px;
+
+    margin-bottom: 44px;
+  }
 }
 
 .textarea {
@@ -141,19 +194,42 @@
 .suscribe-btn {
   @extend %subscribe-btn;
   color: $third-font-color;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 // !Форма
 
+// !ok
 .registration--p {
+  // для мобильного
+  padding: 84px 31px;
+  width: 100%;
+  max-width: 480px;
+
+  background: #191c26;
+
+  // для планшета
+  @media screen and (min-width: 768px) {
+    padding: 100px 39px;
+    width: 100%;
+    max-width: 768px;
+
+    background: #191c26;
+  }
+
+  // для ПК
   @media screen and (min-width: 1280px) {
-    height: 644px;
+    padding-top: 130px;
+    padding-bottom: 188px;
+    padding-left: 55px;
     width: 100%;
     max-width: 640px;
 
     background: #191c26;
-    padding-top: 130px;
-    padding-left: 55px;
   }
 }
 
@@ -183,6 +259,14 @@
 }
 
 .address--mb {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 100px;
+  }
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 70px;
   }
@@ -209,11 +293,18 @@
 }
 
 .address__tel {
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  // @media screen and (min-width: 768px) {
+  margin-top: 20px;
+  margin-bottom: 20px;
 
-    text-decoration: none;
+  text-decoration: none;
+  // }
+}
+
+.contacts-wrapper {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -240,18 +331,40 @@
 }
 
 .contacts-p {
-  max-width: 625px;
-  width: 100%;
+  @media screen and (max-width: 767px) {
+    // Кривой макет
+    position: relative;
+    top: -1px;
 
-  padding-top: 130px;
-  padding-bottom: 130px;
-  padding-left: 100px;
+    padding: 84px 31px;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    // Кривой макет
+    position: relative;
+    top: -1px;
+    max-width: 768px;
+    width: 100%;
+
+    padding: 100px 39px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // Кривой макет
+    position: relative;
+    top: 0px;
+    max-width: 625px;
+    width: 100%;
+
+    padding-top: 130px;
+    padding-bottom: 130px;
+    padding-left: 100px;
+  }
 }
 
 .contacts {
-  // margin-left: auto;
-  // margin-right: auto;
-
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -314,4 +427,20 @@
 .address__tel-svg,
 .address__mail-svg {
   margin-right: 16px;
+}
+
+.br-hidden {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.span-hidden {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

@@ -25,7 +25,23 @@
     flex-direction: row;
     transform: rotate(-90deg);
     position: relative;
-    top: 551px;
+    top: 468px;
+
+    // линия
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -100px;
+
+      display: block;
+      content: '';
+      width: 60px;
+      height: 1px;
+
+      background: $second-font-color;
+
+      margin-right: 40px;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -34,12 +50,29 @@
     transform: rotate(-90deg);
     position: relative;
     left: 5px;
-    top: 551px;
+    top: 468px;
+  }
+
+  // линия
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -100px;
+
+    display: block;
+    content: '';
+    width: 60px;
+    height: 1px;
+
+    background: $second-font-color;
+
+    margin-right: 40px;
   }
 }
 
 .aside-social__link {
   @extend %social;
+  transition: color 250ms linear;
 
   &:not(:last-child) {
     margin-right: 40px;
@@ -51,9 +84,8 @@
     align-items: center;
   }
 
-  &:first-child::before {
-    @extend %line;
-
-    margin-right: 40px;
+  &:hover,
+  &:focus {
+    color: $main-hover-color;
   }
 }

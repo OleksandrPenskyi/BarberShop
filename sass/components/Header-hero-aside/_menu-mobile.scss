@@ -92,7 +92,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  display: block;
+  position: relative;
+
+  &::before {
+    @extend %line;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
 }
 
 .social-mob__link {
@@ -102,16 +109,17 @@
   flex-direction: column;
   align-items: flex-end;
 
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: $main-hover-color;
+  }
+
   &:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  &:first-child::before {
-    @extend %line;
-
-    margin-right: 40px;
   }
 
   text-decoration: none;

@@ -48,7 +48,9 @@
                 <a class="nav-mob__link" href="#price">Услуги и цены</a>
               </li>
               <li class="nav-mob__item"><a class="nav-mob__link" href="#masters">Мастера</a></li>
-              <li class="nav-mob__item"><a class="nav-mob__link" href="#">Контакты</a></li>
+              <li class="nav-mob__item">
+                <a class="nav-mob__link" href="#company-contacts">Контакты</a>
+              </li>
             </ul>
           </nav>
 
@@ -96,7 +98,9 @@
                   <a class="nav-pc__link" href="#price">Услуги и цены</a>
                 </li>
                 <li class="nav-pc__item"><a class="nav-pc__link" href="#masters">Мастера</a></li>
-                <li class="nav-pc__item"><a class="nav-pc__link" href="#">Контакты</a></li>
+                <li class="nav-pc__item">
+                  <a class="nav-pc__link" href="#company-contacts">Контакты</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -949,7 +953,7 @@
         </div>
       </section>
 
-      <footer class="footer footer--ptb">
+      <footer class="footer footer--ptb" id="company-contacts">
         <div class="footer__container">
           <div class="footer_wrapper">
             <!-- Онлайн регистрация -->
@@ -997,33 +1001,40 @@
             <!-- Контакты -->
             <section class="contacts contacts-p">
               <h2 class="contacts__title">Контакты</h2>
-              <address class="address address--mb">
-                <a
-                  class="address__map"
-                  href="https://goo.gl/maps/qd8McCtAAQD9RLAi8"
-                  target="_blank"
-                >
-                  <svg class="address__map-svg" width="24px" height="24px">
-                    <use href="./img/icons.svg#icon-map-pin"></use>
-                  </svg>
-                  ул. Васильковая, 7А <br />Киев, 08132
-                </a>
-                <a class="address__tel" href="tel:+380441111111">
-                  <svg class="address__tel-svg" width="24px" height="24px">
-                    <use href="./img/icons.svg#icon-phone"></use>
-                  </svg>
-                  +38 044 111 11 11</a
-                >
-                <a class="address__mail" href="mailto:barbershop@email.com">
-                  <svg class="address__mail-svg" width="24px" height="24px">
-                    <use href="./img/icons.svg#icon-mail"></use>
-                  </svg>
 
-                  barbershop@email.com</a
-                >
-              </address>
-              <b class="contacts__work-time">время работы</b>
-              <b class="contacts__shedule">Ежедневно с 9:00 до 22:00</b>
+              <div class="contacts-wrapper">
+                <address class="address address--mb">
+                  <a
+                    class="address__map"
+                    href="https://goo.gl/maps/qd8McCtAAQD9RLAi8"
+                    target="_blank"
+                  >
+                    <svg class="address__map-svg" width="24px" height="24px">
+                      <use href="./img/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    ул. Васильковая, 7А <span class="span-hidden">,&nbsp;</span>
+                    <br class="br-hidden" />Киев, 08132
+                  </a>
+                  <a class="address__tel" href="tel:+380441111111">
+                    <svg class="address__tel-svg" width="24px" height="24px">
+                      <use href="./img/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                  <a class="address__mail" href="mailto:barbershop@email.com">
+                    <svg class="address__mail-svg" width="24px" height="24px">
+                      <use href="./img/icons.svg#icon-mail"></use>
+                    </svg>
+
+                    barbershop@email.com</a
+                  >
+                </address>
+
+                <div class="contacts__work">
+                  <b class="contacts__work-time">время работы</b>
+                  <b class="contacts__shedule">Ежедневно с 9:00 до 22:00</b>
+                </div>
+              </div>
             </section>
           </div>
 
