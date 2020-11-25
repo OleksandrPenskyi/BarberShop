@@ -83,3 +83,7 @@
     margin-right: 20px;
   }
 }
+
+.visually-hidden {
+  @extend %visually-hidden;
+}

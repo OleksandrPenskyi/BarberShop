@@ -5,14 +5,12 @@
     display: block;
     width: 159px;
     height: 680px;
-    outline: 1px solid red;
     background: $main-bg-color;
   }
 
   @media screen and (min-width: 1280px) {
     display: block;
     width: 155px;
-    outline: 1px solid red;
     background: $main-bg-color;
   }
 }
